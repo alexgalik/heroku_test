@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		td{
+			width: 110px;
+			border: 1px solid #0B98F1;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Таблица УПЛ</h2>
+	<table>		
+		<tr>
+			<td>№</td>
+			<td>Команда</td>
+			<td>Очки</td>
+		</tr>
+		<% for(var i=0; i<teams.length; i++) { %>
+			<tr>
+				<td><%= i+1 %></td>
+				<td><%= teams[i].name %></td>
+				<td><%= teams[i].points %></td>
+			</tr>
+		<% }; %>		   
+	</table>
+</body>
+</html>
